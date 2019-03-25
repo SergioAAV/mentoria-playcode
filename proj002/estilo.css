@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e6e6e6;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 16px;
+}
+
+.card{
+    background-color: #ffffff;
+    margin: 10px;
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px #999999;
+}
+
+img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.textos{
+    padding: 14px;
+}
+
+.local{
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 12px;
+}
+
+.tempo{
+    text-transform: uppercase;   
+    color: #999999;
+    font-size: 12px;
+}
+
+h2{
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #b5000d;
+}
+
+p{
+    margin-top: 12px;
+    color: #333333;
+    font-size: 13px;
+}
