@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    margin: 90px;
+    width: 1014px;
+    height: 705px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #999999;
+}
+
+caption {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 21px 0px 21px 30px;
+    text-align: start;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    line-height: 56.5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: #EEEEEE;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-bottom: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.mycheck {
+    position: absolute;
+    opacity: 0.54;
+    height: 24px;
+    width: 24px;
+    border: solid #4A4A4A;
+    border-radius: 4px;
+}
+
+.mycheck:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .mycheck:after {
+    display: block;
+}
+
+.container .mycheck:after {
+    left: 8px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #4A4A4A;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
