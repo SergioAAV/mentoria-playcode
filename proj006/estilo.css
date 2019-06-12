@@ -6,16 +6,21 @@
 body {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 h1 {
-    padding: 25px 52px 28px 55px;
+    padding: 25px 0px 28px 0px;
+    text-align: center;
 }
 
 .card {
     width: 300px;
-    height: 222px;
     padding: 0px 20px 48px 0px;
+}
+
+.card img {
+    width: 100%;
 }
 
 h2 {
@@ -23,7 +28,6 @@ h2 {
     font-weight: 500;
     color: #4A4A4A;
     padding: 5px 0px 0px 0px;
-    text-align: left;
 }
 
 .container {
@@ -33,9 +37,36 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    text-align: center;
 }
 
 .container>*:first-child {
     flex-basis: 100%;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        padding: 0px 0px 48px 0px;
+    }
+}
+
+
+
+/*Outra opção:
+.card {
+    width: 300px;
+    padding: 0px 20px 48px 0px;
+    float: left;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    height: 600px;
+}
+
+Apagar opção .container>*:first-child
+*/
