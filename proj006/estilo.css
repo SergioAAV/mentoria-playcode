@@ -9,8 +9,7 @@ body {
 }
 
 h1 {
-    text-align: center;
-    padding: 25px 55px 28px 55px;
+    padding: 25px 52px 28px 55px;
 }
 
 .card {
@@ -24,16 +23,19 @@ h2 {
     font-weight: 500;
     color: #4A4A4A;
     padding: 5px 0px 0px 0px;
+    text-align: left;
 }
 
 .container {
+    margin: 0 auto;
     width: 960px;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    text-align: center;
 }
 
 .container>*:first-child {
-    align-self: stretch;
+    flex-basis: 100%;
 }
