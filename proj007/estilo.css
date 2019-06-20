@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 101px;
+    float: left;
+}
+
+@media (max-width: 1440px) {
+    header .container {
+        margin-left: 240px;
+    }
+}
+
+header .container .card{
+    line-height: 60px;
+}
+
+header .container .card h1 {
+    height: 79px;
+    width: 176px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 19px 166px 0px 0px;
+}
+
+header .container .card h1 span {
+    visibility: hidden;
+}
+
+header .container .card nav {
+    display: inline-block;
+}
+
+header .container .card nav ul {
+    list-style: none;
+}
+
+header .container .card nav ul li {
+    display: inline-block;
+}
+
+header .container .card nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-right: 90px;
+}
+
+header .container .card nav ul #conv a{
+    padding: 10px 35px 10px 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 3px;
+}
+
+#topo {
+    background-image: url(fundo_topo.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 828px;
+    margin: auto;
+}
+
+#topo .container {
+    height: 719px;
+}
+
+#topo .container .card {
+    width: 460px;
+    height: 225px;
+    padding-top: 231px;
+    text-align: center;
+}
+
+#topo .container .card h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin: 0px 0px 7px 0px;
+}
+
+#topo .container .card h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    margin: 0px 0px 26px 0px;
+}
+
+#topo .container .card .linkbox {
+    width: inherit;
+    height: 88px;
+    background-color: #FF3D7F;
+    border-radius: 4px;
+    box-shadow: 0px 6px 0px #A32752;
+    line-height: 82px;
+}
+
+#topo .container .card a {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    vertical-align: middle;
+}
+
+#conheca {
+    width: 1440px;
+    height: 553px;
+    margin: auto;
+}
+
+#conheca .container {
+    width: 960px;
+    height: 553px;
+}
+
+#conheca .container img {
+    float: left;
+    padding-right: 100px;
+    padding-top: 67px;
+}
+
+#conheca .container .cardtext {
+    width: 460px;
+    height: 398px;
+    text-align: left;
+    float: left;
+    padding-top: 113px;
+}
+
+#conheca .container .cardtext h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    margin: 0px 0px 21px 0px;
+}
+
+#conheca .container .cardtext p {
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    margin: 0px 0px 43px 0px;
+}
+
+#conheca .container .cardtext .linkbox {
+    width: 290px;
+    height: 73px;
+    background-color: #FF3D7F;
+    border-radius: 4px;
+    box-shadow: 0px 6px 0px #A32752;
+    line-height: 73px;
+    text-align: center;
+}
+
+#conheca .container .cardtext a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    vertical-align: middle;
+}
+
+#depoimentos {
+    width: 1440px;
+    height: 440px;
+    margin: auto;
+    background-color: #EBE7FB;
+}
+
+#depoimentos .container {
+    width: 960px;
+    height: 440px;
+    text-align: center;
+}
+
+#depoimentos .container img {
+    padding-top: 63px;
+    padding-bottom: 21px;
+}
+
+#depoimentos .container p{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    line-height: 29px;
+}
+
+#depoimentos .container h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    line-height: 29px;
+}
+
+#convite {
+    background-image: url(fundo-convite.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 424px;
+    margin: auto;
+}
+
+#convite .container {
+    height: 424px;
+    line-height: 424px;
+}
+
+.cardmail {
+    margin: auto;
+    text-align: center;
+    padding-top: 152px;
+}
+
+#convite .container .cardmail form {
+    width: 641px;
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    background-color: white;
+    opacity: 0.89;
+    border-radius: 4px;
+    margin: auto;
+    text-align: center;
+}
+
+#convite .container .cardmail input {
+    border: none;
+    width: 453px;
+    height: 29px;
+    color: #4A4A4A;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 44px;
+    margin-right: 15px;
+}
+
+#convite .container .cardmail button {
+    width: 88px;
+    height: 45px;
+    border: none;
+    background-color: unset;
+    background-image: url(botao-convite.png);
+    background-repeat: no-repeat;
+}
+
+#convite .container .cardmail button span {
+    visibility: hidden;
+}
+
+footer {
+    height: 94px;
+    width: 1440px;
+    background-color: #2A0157;
+    margin: auto;
+    text-align: center;
+    line-height: 94px;
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    vertical-align: middle;
+}

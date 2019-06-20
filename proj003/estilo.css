@@ -23,7 +23,7 @@ input {
     width: 100%;
 }
 
-::placeholde {
+::placeholder {
     color: #ffffff;
     font-weight: 300;
     
