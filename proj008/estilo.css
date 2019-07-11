@@ -147,7 +147,7 @@ aside nav ul li:hover {
 }
 
 .maincard .cardinfo {
-    width: 400px;
+    width: 480px;
     margin-left: 32px;
     margin-top: 38px;
 }
@@ -169,6 +169,34 @@ aside nav ul li:hover {
     border: 1px solid #DCDCDC;
     border-radius: 4px;
     padding-left: 14px;
+}
+
+.oklogo {
+    width: 18px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    display: inline-block;
+}
+
+.maincard .cardinfo form h2 {
+    height: 18px;
+    width:18px;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.maincard .cardinfo form h2 span {
+    visibility: hidden;
+}
+
+.maincard .cardinfo input[type="email"]:valid + .oklogo {
+    background-image: url(./design/ok.png);
+    background-repeat: no-repeat;
+}
+
+.maincard .cardinfo input[type="tel"]:valid + .oklogo {
+    background-image: url(./design/ok.png);
+    background-repeat: no-repeat;
 }
 
 .maincard .cardinfo select {
