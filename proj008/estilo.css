@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #242536;
+}
+
+header .container {
+    width: inherit;
+    display: flex;
+}
+
+header .container .logo {
+    width: 200px;
+    height: 60px;
+    background-color: #151524;
+    text-align: center;
+}
+
+header .container .logo img {
+    margin-top: 19px;
+}
+
+header .container .username {
+    flex-grow: 1;
+}
+
+header .container .username .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    float: right;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+header .container .username .circle a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+aside {
+    width: 200px;
+    height: 2000px;
+    background-color: #242536;
+    float: left;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li { 
+    width: inherit;
+    height: 50px;
+    line-height: 50px;
+    border-left: 4px solid #242536;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: auto;
+    font-weight: bold;
+}
+
+aside nav ul li a i {
+    width: 18px;
+    padding-left: 12px;
+    padding-right: 13px;
+    text-align: center;
+}
+
+aside nav ul li .iteminfo{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.6;
+    float: right;
+    margin-right: 11px;
+}
+
+aside nav ul li:hover {
+    background-color: #151524;
+    border-left-color: #FFB946;
+}
+
+.menuinterno {
+    background-color: white;
+    height: 60px;
+    width: 1240px;
+    float: left;
+}
+
+.menuinterno nav ul {
+    display: inline;
+    list-style: none;
+    line-height: 60px;
+}
+
+.menuinterno nav ul li {
+    float: left;
+    margin: auto;
+    margin-left: 41px;
+    margin-right: 43px;
+}
+
+.menuinterno nav ul li a {
+    display: block;
+    height: 56px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid white;
+}
+
+.menuinterno nav ul li a:hover {
+    border-bottom-color: #FFB946;
+    color: #FFB946;
+}
+
+.maincard {
+    width: 1200px;
+    height: 890px;
+    background-color: white;
+    margin-top: 19px;
+    margin-left: 20px;
+    border-radius: 6px;
+    float: left;
+}
+
+.maincard .cardinfo {
+    width: 400px;
+    margin-left: 32px;
+    margin-top: 38px;
+}
+
+.maincard .cardinfo h1 {
+    font-size: 20px;
+    color: black;
+}
+
+.cardinfo .mid {
+    margin-top: 58px;
+}
+
+.maincard .cardinfo input {
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    padding-left: 14px;
+}
+
+.maincard .cardinfo select {
+    width: 416px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.maincard .cardinfo select:required:invalid {
+    color: gray;
+}
+
+.maincard .cardinfo select option[value=""][disabled] {
+    display: none;
+}
+
+.maincard .cardinfo select option {
+    color: black;
+}
+
+.maincard .cardinfo .emailtext {
+    width: 385px;
+    height: 28px;;
+    margin-top: 4px;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+/* Checkbox customization */
+.box {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 13px;
+    padding-left: 27px;
+    padding-top: 1px;
+}
+/* Hide default */
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create custom */
+.mycheck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+/* Checkbox checked */
+.box input:checked ~ .mycheck {
+    background-color: #3ACA60;
+    border-color: #3ACA60;
+}
+
+/* Checkbox indicator */
+.mycheck:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show indicator when checked */
+.box input:checked ~ .mycheck:after {
+    display: block;
+}
+/* Style indicator */
+.box .mycheck:after {
+    left: 4.5px;
+    top: 2px;
+    width: 3.5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+button {
+    background-color: #3ACA60;
+    height: 40px;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto 008</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="design/nucliot-logo.png" alt="Nucliot Project">
+            </div>
+            <div class="username">
+                <div class="circle">
+                    <a href="">TD</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-dollar-sign"></i>Balance</a><span class="iteminfo">$ 322</span></li>
+                <li><a href=""><i class="fas fa-chart-area"></i>Dashboard</a></li>
+                <li><a href=""><i class="fas fa-signal"></i>Base Stations</a><span class="iteminfo">12</span></li>
+                <li><a href=""><i class="fas fa-cubes"></i>My Projects</a><span class="iteminfo">4</span></li>
+                <li><a href=""><i class="fas fa-cog"></i>Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="menuinterno">
+        <div class="cardopt">
+            <nav>
+                <ul>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Billing</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div class="maincard">
+        <div class="cardinfo">
+            <h1>Personal information</h1>
+            <input type="email" placeholder="Your email here" id="emailAddress" required>
+            <p class="emailtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</p>
+            <input type="text" placeholder="Given name(s)" id="givenName">
+            <input type="text" placeholder="Surname" id="surName">
+            <select id="country" required>
+                <option value="" selected disabled>Select your country</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="NewZealand">New Zealand</option>
+                <option value="UnitedKingdom">United Kingdom</option>
+                <option value="USA">United States of America</option>
+            </select>
+            <input type="tel" placeholder="Your phone number here" id="phoneNumber" required>
+            
+            <h1 class="mid">Password</h1>
+            <input type="password" placeholder="Password" id="passwrd">
+            <input type="password" placeholder="New password" id="newPasswrd">
+            <input type="password" placeholder="New password again" id="newPasswrdAgain">
+
+            <h1 class="mid">Anything</h1>
+            <label class="box">Güncelleme ve yenilikleri mail olarak almak istiyorum.
+                <input type="checkbox" checked="checked">
+                <span class="mycheck"></span>
+            </label>
+            <label class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.
+                <input type="checkbox" checked="checked">
+                <span class="mycheck"></span>
+            </label>
+
+            <button>SAVE</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
